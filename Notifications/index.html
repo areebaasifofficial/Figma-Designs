@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications UI</title>
+    <style>
+        body {
+            background-color: #333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .notification-card {
+            background-color: #fff;
+            width: 380px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h2 {
+            position: relative;
+            margin: 0;
+            top: 5px;
+            left: 20px;
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        .back-arrow {
+            position: relative;
+            top: 20px;
+            font-weight: 900;
+            margin-right: 40px;
+            margin-top: -10px;
+            color: #ff5252;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .day {
+            margin-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .list {
+            background-color: #e0e0e0;
+        }
+
+        .item {
+            display: flex;
+            padding: 15px ;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .content {
+            flex: 1;
+        }
+
+        .text {
+            font-size: 0.95rem;
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+
+        .text b {
+            font-weight: 700;
+        }
+
+        .time {
+            color: #aaa;
+            font-weight: normal;
+            font-size: 0.85rem;
+            margin-left: 4px;
+        }
+
+        .priority {
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .priority span {
+            color:  #d32f2f;
+        }
+
+        .thumbnail img{
+            display: block;
+            width: 95px;
+            height: 55px;
+            border-radius: 8px;
+        }
+        .thumbnail1 img{
+            display: block;
+            width: 65px;
+            height: 55px;
+            margin-right: 10px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="notification-card">
+    <div class="header">
+        <h2>Notifications</h2>
+        <div class="back-arrow">↩</div>
+    </div>
+    <div class="day">Today</div>
+    <div class="list">
+        <div class="item">
+            <div class="content">
+                <div class="text">
+                    Complete the <b>UI design</b> of Landing Page for <b>FoodVentures.</b>
+                    <span class="time">2h</span>
+                </div>
+                <div class="priority">Priority: <span>High</span></div>
+            </div>
+            <div class="thumbnail"><img src="FoodVentures.png" alt=""></div>
+        </div>
+
+        <div class="item">
+            <div class="content">
+                <div class="text">
+                    Complete the <b>UI design</b> of Landing Page for <b>Travel Days.</b>
+                    <span class="time">2h</span>
+                </div>
+                <div class="priority">Priority: <span>High</span></div>
+            </div>
+            <div class="thumbnail1"><img src="travel.png" alt=""></div>
+        </div>
+
+        <div class="item">
+            <div class="content">
+                <div class="text">
+                    Complete the <b>Mobile app design</b> for <b>Pet Warden.</b>
+                    <span class="time">2h</span>
+                </div>
+                <div class="priority">Priority: <span style="color: #ff1744;">Extremely High</span></div>
+            </div>
+            <div class="thumbnail1"><img src="pet.webp" alt=""></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

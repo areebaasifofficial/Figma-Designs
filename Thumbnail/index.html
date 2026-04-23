@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <span class="dash">Dash</span>board
+    </div>
+     <header class="topbar">
+  <div class="search-box">
+    <input type="text" placeholder="Search your task here...">
+    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+  </div>
+
+  <div class="top-icons">
+    <i class="fa fa-bell"></i>
+    <i class="fa fa-calendar"></i>
+    <span class="date">Tuesday<br><small>20/06/2023</small></span>
+  </div>
+</header>
+  </nav>
+  <div class="dashboard">
+  <aside class="sidebar">
+    <div class="profile">
+      <img src="boy.jpeg" alt="">
+      <h3>Sundar Gurung</h3>
+      <p>sundargurung360@gmail.com</p>
+    </div>
+    <ul class="menu">
+      <li class="active"><i class="fa fa-home"></i> Dashboard</li>
+      <li><i class="fa-solid fa-exclamation fa-xl"></i> Vital Task</li>
+      <li><i class="fa fa-list"></i> My Task</li>
+      <li><i class="fa fa-layer-group"></i> Task Categories</li>
+      <li><i class="fa fa-cog"></i> Settings</li>
+      <li><i class="fa fa-question-circle"></i> Help</li>
+    </ul>
+    <div class="logout">
+      <i class="fa fa-sign-out-alt"></i> Logout
+    </div>
+  </aside>
+    <section class="welcome">
+      <h1 class="sundar">Welcome back, Sundar👋</h1>
+      <div class="users">
+        <img src="boy.jpeg">
+        <img src="boy.jpeg">
+        <img src="boy.jpeg">
+        <button class="invite">+ Invite</button>
+      </div>
+    </section>
+  <main>
+    <div class="grid">
+      <div class="box"></div>
+      <div class="left">
+        <div class="card">
+          <div class="card-header">
+            <i class="fa-solid fa-clipboard-list fa-xl" id="to-do"></i><h3 class="list">To-Do</h3>
+            <div class="add"><span class="plus">+</span>Add task</div>
+            <h6 class="june">20 June .Today</h6>
+          </div>
+          <div class="task">
+              <i class="fa-regular fa-circle"></i>
+              <h4 class="party">Attend Nishchal's Birthday <br> Party</h4>
+              <p class="description">Buy gifts on the way and pick up <br> cake from the bakery. {6 PM | <br> Fresh Elements}...</p>
+              <p class="priority">Priority:<span id="medium">Medium</span></p>
+              <p class="priority">Status:<span id="start">Not Started</span></p>
+              <p class="priority">Created on:20/06/2023</p>
+            <img src="boy.jpeg">
+          </div>
+
+          <div class="task">
+              <i class="fa-regular fa-circle" id="circle"></i>
+              <h4 class="party">Landing Page Design for <br> TravelDays</h4>
+              <p class="description">Get the work done by EOD and <br> discuss with client before leaving. <br> {4PM | Meeting Room}</p>
+              <p class="priority">Priority:<span id="medium">Medium</span></p>
+              <p class="priority">Status:<span id="started">In Progress</span></p>
+              <p class="priority">Created on:20/06/2023</p>
+            </div>
+            <img src="boy.jpeg" class="img">
+          
+
+          <div class="task">
+              <i class="fa-regular fa-circle" id="circle"></i>
+              <h4 class="party">Presentation on Final Product</h4>
+              <p class="description">Make sure everything is <br> functioning and the necessities <br> are properly met. Prepare the team <br> and get the documents ready for...</p>
+              <p class="priority">Priority:<span id="medium">Medium</span></p>
+              <p class="priority">Status:<span id="started">In Progress</span></p>
+              <p class="priority">Created on:20/06/2023</p>
+            <img src="boy.jpeg" class="img1">
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="card1">
+          <i class="fa-solid fa-clipboard-list fa-xl" id="to-do"></i><h3 class="list1">Task Status</h3>
+          <div class="progress-container">
+            <div class="progress">
+              <i class="fa-regular fa-circle" fa-xl id="circle1"></i>
+              <span class="per">84%</span>
+              <p class="com">Completed</p>
+            </div>
+
+            <div class="progress">
+              <i class="fa-regular fa-circle" fa-xl id="circle2"></i>
+              <span class="per">46%</span>
+              <p class="com">In Progress</p>
+            </div>
+
+            <div class="progress">
+              <i class="fa-regular fa-circle" fa-xl id="circle3"></i>
+              <span class="per">13%</span>
+              <p class="com">Not Started</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="card2">
+          <i class="fa-solid fa-clipboard-list fa-xl" id="to-do"></i><h3 class="list1">Completed Task</h3>
+          <div class="task1">
+              <i class="fa-regular fa-circle" id="cir"></i>
+              <h4 class="party">Walk the dog</h4>
+              <p class="description">Take the dog to park <br> and bring treats as well.</p>
+              <p class="priority">Status:<span id="completed">Completed</span></p>
+              <p class="description1">Completed 2 Days ago</p>
+            </div>
+            <img src="Dog.jpg" class="img2">
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+</body>
+</html>

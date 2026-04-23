@@ -1,0 +1,474 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background: #f5f6fa;
+}
+
+nav{
+  top: -10px;
+  position: absolute;
+  margin-top: 5px;
+  width: 100%;
+  height: 70px;
+  background: #e4e1e1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dash {
+  margin-left: 63px;
+  color: #ff6b6b;
+}
+
+.logo {
+  color: #fff;
+  position: absolute;
+  padding-top: 13px;
+  padding-left: 20px;
+  margin-top: 5px;
+  font-size: 29px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 100px;
+}
+
+.topbar {
+  margin-left: 250px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* SEARCH BOX */
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  width: 500px;
+  height: 40px;
+  padding: 10px 45px 10px 10px; /* space for icon */
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: #ffffff;
+}
+
+.search-icon {
+  position: absolute;
+  width: 40px;
+  height: 6.5vh;
+  padding: 10px;
+  right: 0px;
+  background: #ff6b6b;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.top-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.fa {
+  background: #ff6b6b;
+  color: white;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.date {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.date small {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  padding-top: 50px;
+  width: 260px;
+  background: #ff6b6b;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  position: relative;
+  top: 26px;
+  text-align: center;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.profile img {
+  width: 95px;
+  height: 85px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile h3 {
+  margin-top: -10px;
+  font-size: 16px;
+}
+
+.profile p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  position: relative;
+  top: 20px;
+  padding: 2px;
+  margin: 8px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.menu li:hover{
+  background: white;
+  color: #ff6b6b;
+}
+
+.logout {
+  position: relative;
+  top: 80px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.card {
+  margin-top: 90px;
+  height: 83vh;
+  width: 309%;
+  margin-left: 20px;
+  background: #f5f6fa;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.hr{
+  margin-left: -1010px;
+  margin-top: 5px;
+  color: #ff6b6b;
+}
+
+.back {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-info img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+form{
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  height: 74%;
+}
+
+form input {
+  width: 60%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.update {
+  background: #ff4c4c;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.cancel {
+  background: #ff4c4c;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+  .topbar input {
+    width: 300px;
+}
+}
+@media (max-width: 768px) {
+
+  body {
+    overflow-y: auto;
+  }
+
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  nav {
+    position: relative;
+    height: auto;
+  }
+
+  .topbar {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .topbar input {
+    width: 100%;
+  }
+
+  .top-icons {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .card{
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .topbar input {
+    height: 35px;
+  }
+
+  .fa {
+    width: 30px;
+    padding: 8px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .party {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 9px;
+  }
+}
+
+
+@media (max-width: 460px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .profile h3 {
+    font-size: 14px;
+  }
+
+  .profile p {
+    font-size: 11px;
+  }
+
+  .top-icons {
+    display: none;
+  }
+
+  nav {
+    height: 25px;
+  }
+
+  .logo {
+    font-size: 18px;
+    text-align: center;
+    position: static;
+    padding: 10px;
+  }
+
+  .topbar {
+    padding: 15px;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .topbar input {
+    margin-top: -100px;
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .fa {
+    width: 28px;
+    padding: 7px;
+  }
+
+  .add{
+    white-space: nowrap;
+    font-size: 16px;
+    float: none;
+    margin-left: 190px;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+  }
+
+  .task,
+  .task1 {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .sundar {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  .list{
+    white-space: nowrap;
+    margin-top: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .party {
+    font-size: 12px;
+  }
+
+  .description {
+    margin-top: 10px;
+    font-size: 9px;
+    white-space: normal;
+  }
+
+  .img,
+  .img1,
+  .img2,
+  .task img {
+    display: none;
+  }
+
+  .menu, 
+  .logout,
+  .june{
+    display: none;
+  }
+  
+  .left,
+  .right{
+    width: 100%;
+    margin: 0;
+    position: static;
+  }
+
+  .users img,
+  .invite {
+    display: none;
+  }
+
+  .progress-container {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
